@@ -9,8 +9,7 @@ end JKFF;
 
 architecture arch_JKFF of JKFF is
 begin
-    process(J,K,CLK,RST)
-    begin
+    process(J,K,CLK,RST) begin
         if(RST='1') then
         Q <= '0';
         elsif (rising_edge(CLK)) then
@@ -24,3 +23,5 @@ begin
         end if;
     end process;
 end arch_JKFF;
+
+-- example: http://electronicstopper.blogspot.com/2017/07/jk-flip-flop-in-vhdl-with-testbench.html
