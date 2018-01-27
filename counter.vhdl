@@ -1,8 +1,8 @@
 entity COUNTER is
-port(
-    clk: in std_logic;                          -- Clock
-    rst: in std_logic;                          -- Restet
-    a: inout std_logic_vector(3 downto 0));     -- Output
+    port(
+        clk: in std_logic;                          -- Clock
+        rst: in std_logic;                          -- Restet
+        a: inout std_logic_vector(3 downto 0));     -- Output
 end COUNTER;
 
 architecture arch_COUNTER of COUNTER is
